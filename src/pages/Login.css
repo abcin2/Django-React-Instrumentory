@@ -1,0 +1,132 @@
+#login-full-page,
+#register-full-page,
+#forgot-full-page {
+    position: absolute;
+    height: max-content;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    /* bottom: 0;
+    right: 0; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+/* these medai queries are dependant on the size of the forms in each page */
+/* this could probably be done dynamically, but for now they need to change if inputs are removed/added */
+@media only screen and (min-height: 38rem) {
+    #forgot-full-page {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-height: 43rem) {
+    #login-full-page {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-height: 46rem) {
+    #register-full-page {
+        height: 100vh;
+    }
+}
+
+form input {
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+}
+
+form label {
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+
+#error-text {
+    position: absolute;
+    top: 11.5rem;
+    color: var(--danger);
+    font-size: 0.65rem;
+    margin-top: 0;
+}
+
+.login-header {
+    padding-top: 5rem;
+}
+
+.login-header > h1,
+.login-header > h2,
+.login-header > h3 {
+    margin: 0.25rem;
+}
+
+.login-header > h1 {
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+
+.login-header > h2 {
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 2rem 0.25rem 0rem 0.25rem;
+}
+
+.login-header > h3 {
+    font-size: 1.5rem;
+}
+
+.login-input {
+    display: block;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 1.75rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-button {
+    display: block;
+    font-size: 1rem;
+    margin: 3rem auto 3rem auto;
+}
+
+.login-card {
+    margin-bottom: 5rem;
+    padding: 2rem;
+    height: 18rem;
+}
+
+.register-card {
+    margin-bottom: 5rem;
+    padding: 2rem;
+    height: 21rem;
+}
+
+.forgot-password-card {
+    margin-bottom: 5rem;
+    padding: 2rem;
+    height: 13rem;
+}
+
+.fixer-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.forgot-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}
+
+.register-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}
